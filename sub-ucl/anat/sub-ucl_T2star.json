@@ -1,0 +1,6 @@
+{
+    "Modality": "MR",
+    "EchoTime": 0.014, 
+    "RepetitionTime": 0.6, 
+    "FlipAngle": 30
+}

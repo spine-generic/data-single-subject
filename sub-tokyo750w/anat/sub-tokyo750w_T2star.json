@@ -1,0 +1,23 @@
+{
+	"Modality": "MR",
+	"Manufacturer": "GE",
+	"ManufacturersModelName": "DISCOVERY_MR750w",
+	"EchoTrainLength": 3,
+	"AcquisitionNumber": 1,
+	"InstitutionName": "TOKYO_UNIV_HOSPITAL",
+	"DeviceSerialNumber": "0000000000EM0204",
+	"SoftwareVersions": "24_LX_MR_Software_release:DV24.0_R01_1344.a",
+	"ScanningSequence": "GR",
+	"SequenceVariant": "SS_SK",
+	"SeriesDescription": "GRE-ME",
+	"ProtocolName": "GRE-ME",
+	"ImageType": ["ORIGINAL", "PRIMARY", "OTHER"],
+	"AcquisitionTime": "20:53:3.000000",
+	"MagneticFieldStrength": 3,
+	"FlipAngle": 30,
+	"EchoTime": 0.013896,
+	"RepetitionTime": 0.6,
+	"PhaseEncodingLines": 448,
+	"ConversionSoftware": "dcm2niix",
+	"ConversionSoftwareVersion": "v1.0.20170818 (OpenJPEG build) Clang7.3.0"
+}

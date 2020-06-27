@@ -1,0 +1,10 @@
+{
+    "Name": "Spinal Cord MRI Public Database (Single-subject)",
+    "BIDSVersion": "1.2.0",
+    "Authors": [
+        "Julien Cohen-Adad"
+    ],
+    "License": "CC0",
+    "Acknowledgements": "We thank Alexandru Foias (Polytechnique Montreal) for database management and image processing, Drs. Gerald Moran and Bart Schraa (Siemens Healthcare), Drs. Suchandrima Banerjee and Naoyuki Takei (GE Healthcare) and Dr. Guillaume Gilbert (Philips Healthcare) for consultation on vendor-specific questions, and Carollyn Hurst, Andr\u00e9 Cyr, Arnaud Bor\u00e9 and Dr. Pierre Bellec (Functional Neuroimaging Unit), Charles Tremblay (Polytechnique Montreal), Antonys Melek and Dr. Habib Benali (PERFORM center, Concordia University), Dr. Ives Levesque (McGill University), Dr. Jamie Near (Douglas Hospital), Dr. Robert Barry (MGH Martinos Center), Dr. Johanna Vannesjo (Oxford University), Drs. Claudia Gandini Wheeler-Kingshott, Francesco Grussu, Rebecca Samson and Marios Yiannakas (UCL), Dr. Satoshi Maki (Chiba University Hospital), Dr. Shigeki Aoki, Dr. Masaaki Hori, Dr. Akifumi Hagiwara, Issei Fukunaga (Juntendo University), Dr. Kouhei Kamiya, Y. Suzuki (Tokyo University) for helping with data acquisition.",
+    "DatasetDOI": "10.18112/openneuro.ds002900.v1.0.4"
+}

@@ -1,0 +1,13 @@
+{
+	"Manufacturer": "GE",
+	"ManufacturersModelName": "DISCOVERY_MR750",
+	"ProtocolName": "GRE-MT0",
+	"ImageType": ["ORIGINAL", "PRIMARY", "OTHER"],
+	"AcquisitionDateTime": "2018-11-26T12:51:54.000000",
+	"MagneticFieldStrength": 3,
+	"FlipAngle": 9,
+	"EchoTime": 0.004,
+	"RepetitionTime": 0.062,
+	"ConversionSoftware": "dcm2niix",
+	"ConversionSoftwareVersion": "v1.0.20170130 (openJPEG build)"
+}

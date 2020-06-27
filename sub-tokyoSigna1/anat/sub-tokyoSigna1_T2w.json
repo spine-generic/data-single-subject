@@ -1,0 +1,23 @@
+{
+	"Modality": "MR",
+	"Manufacturer": "GE",
+	"ManufacturersModelName": "Signa_HDxt",
+	"EchoTrainLength": 90,
+	"AcquisitionNumber": 1,
+	"InstitutionName": "TOKYO_UNIV_HOSPITAL",
+	"DeviceSerialNumber": "0000000000YM1800",
+	"SoftwareVersions": "24_LX_MR_Software_release:HD16.0_V03_1638.a",
+	"ScanningSequence": "SE",
+	"SequenceVariant": "SK",
+	"SeriesDescription": "T2w",
+	"ProtocolName": "T2w",
+	"ImageType": ["ORIGINAL", "PRIMARY", "OTHER"],
+	"AcquisitionTime": "19:00:1.000000",
+	"MagneticFieldStrength": 3,
+	"FlipAngle": 90,
+	"EchoTime": 0.08001,
+	"RepetitionTime": 2.5,
+	"PhaseEncodingLines": 320,
+	"ConversionSoftware": "dcm2niix",
+	"ConversionSoftwareVersion": "v1.0.20170818 (OpenJPEG build) Clang7.3.0"
+}

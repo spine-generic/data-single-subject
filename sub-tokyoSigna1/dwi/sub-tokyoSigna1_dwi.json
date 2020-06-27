@@ -1,0 +1,23 @@
+{
+	"Modality": "MR",
+	"Manufacturer": "GE",
+	"ManufacturersModelName": "Signa_HDxt",
+	"AcquisitionNumber": 1,
+	"InstitutionName": "TOKYO_UNIV_HOSPITAL",
+	"DeviceSerialNumber": "0000000000YM1800",
+	"SoftwareVersions": "24_LX_MR_Software_release:HD16.0_V03_1638.a",
+	"ScanningSequence": "EP_SE",
+	"SequenceVariant": "NONE",
+	"SeriesDescription": "DWI",
+	"ProtocolName": "DWI",
+	"ImageType": ["ORIGINAL", "PRIMARY", "OTHER"],
+	"AcquisitionTime": "19:05:54.000000",
+	"MagneticFieldStrength": 3,
+	"FlipAngle": 90,
+	"EchoTime": 0.0827,
+	"RepetitionTime": 4,
+	"PhaseEncodingLines": 48,
+	"EffectiveEchoSpacing": 0.000944,
+	"ConversionSoftware": "dcm2niix",
+	"ConversionSoftwareVersion": "v1.0.20170818 (OpenJPEG build) Clang7.3.0"
+}

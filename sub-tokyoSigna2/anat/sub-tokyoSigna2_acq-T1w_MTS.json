@@ -1,0 +1,22 @@
+{
+	"Modality": "MR",
+	"Manufacturer": "GE",
+	"ManufacturersModelName": "Signa_HDxt",
+	"AcquisitionNumber": 1,
+	"InstitutionName": "TOKYO_UNIV_HOSPITAL",
+	"DeviceSerialNumber": "0000000000YM1801",
+	"SoftwareVersions": "24_LX_MR_Software_release:HD16.0_V03_1638.a",
+	"ScanningSequence": "GR",
+	"SequenceVariant": "SS_SP",
+	"SeriesDescription": "GRE-T1w",
+	"ProtocolName": "GRE-T1w",
+	"ImageType": ["ORIGINAL", "PRIMARY", "OTHER"],
+	"AcquisitionTime": "20:01:11.000000",
+	"MagneticFieldStrength": 3,
+	"FlipAngle": 15,
+	"EchoTime": 0.004,
+	"RepetitionTime": 0.015,
+	"PhaseEncodingLines": 192,
+	"ConversionSoftware": "dcm2niix",
+	"ConversionSoftwareVersion": "v1.0.20170818 (OpenJPEG build) Clang7.3.0"
+}

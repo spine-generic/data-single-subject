@@ -1,0 +1,23 @@
+{
+	"Modality": "MR",
+	"Manufacturer": "GE",
+	"ManufacturersModelName": "Signa_HDxt",
+	"EchoTrainLength": 4,
+	"AcquisitionNumber": 1,
+	"InstitutionName": "TOKYO_UNIV_HOSPITAL",
+	"DeviceSerialNumber": "0000000000YM1801",
+	"SoftwareVersions": "24_LX_MR_Software_release:HD16.0_V03_1638.a",
+	"ScanningSequence": "GR",
+	"SequenceVariant": "SS_SK",
+	"SeriesDescription": "GRE-ME",
+	"ProtocolName": "GRE-ME",
+	"ImageType": ["ORIGINAL", "PRIMARY", "OTHER"],
+	"AcquisitionTime": "20:03:44.000000",
+	"MagneticFieldStrength": 3,
+	"FlipAngle": 20,
+	"EchoTime": 0.01337,
+	"RepetitionTime": 0.6,
+	"PhaseEncodingLines": 448,
+	"ConversionSoftware": "dcm2niix",
+	"ConversionSoftwareVersion": "v1.0.20170818 (OpenJPEG build) Clang7.3.0"
+}
