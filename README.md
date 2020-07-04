@@ -16,7 +16,7 @@ zip codes, dates of birth, facial features on structural scans.
 
 To download the latest version of this dataset, you have two options:
 
-**Option 1:**
+### Download zip package (recommended)
 
 If you are only planning on using the dataset for processing, you can download the latest version as a zip package:
 
@@ -25,7 +25,7 @@ curl -o spinegeneric.zip -L https://github.com/spine-generic/data-single-subject
 unzip spinegeneric.zip
 ~~~
 
-**Option 2 (slower):**
+### Clone the repository (slower)
 
 If you are planning on contributing to this repository (e.g. uploading manual segmentations/labels), you need to clone this repository:
 ~~~
