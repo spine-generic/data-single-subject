@@ -1,0 +1,22 @@
+language: python
+
+python:
+  - "3.7"
+
+# blocklist
+branches:
+  except:
+  - master
+
+# safelist
+branches:
+  only:
+  - af/acq_param_ci
+  
+install:
+  - pip install pybids 
+
+script: 
+
+  - python ./code/params_checker.py
+
