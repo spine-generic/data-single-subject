@@ -19,6 +19,7 @@ install:
   - cd spine-generic/
   - source /home/travis/.bashrc
   - pip install -e .
+  - which python
 
 script: 
   - sg_params_checker -path-in ./
