@@ -19,7 +19,7 @@ install:
   - cd spine-generic/
   - source /home/travis/.bashrc
   - pip install -e .
-  - which python
+  - source /home/travis/virtualenv/python3.7.1/bin/activate
 
 script: 
   - sg_params_checker -path-in ./
