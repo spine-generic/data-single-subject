@@ -14,9 +14,9 @@ branches:
   - af/acq_param_ci
   
 install:
-  - pip install pybids 
+  - git clone https://github.com/spine-generic/spine-generic.git
+  - git checkout af/acq_param_ci
+  - pip install -e .
 
 script: 
-
-  - python ./code/params_checker.py
-
+  - sg_params_checker -path-in ./
