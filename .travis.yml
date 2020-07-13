@@ -20,6 +20,7 @@ install:
   - source /home/travis/.bashrc
   - pip install -e .
   - source /home/travis/virtualenv/python3.7.1/bin/activate
+  - cd ..
 
 script: 
   - sg_params_checker -path-in ./
