@@ -18,7 +18,7 @@ install:
   - cd spine-generic/
   - git checkout af/acq_param_ci
   - pip install -e .
-  - source /home/travis/virtualenv/python3.7.1/bin/activate
+  - source ~/virtualenv/python3.7/bin/activate
   - cd ..
 
 script: 
