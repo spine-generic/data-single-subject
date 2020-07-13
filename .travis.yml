@@ -15,9 +15,8 @@ branches:
   
 install:
   - git clone https://github.com/spine-generic/spine-generic.git
-  - git checkout af/acq_param_ci
   - cd spine-generic/
-  - source /home/travis/.bashrc
+  - git checkout af/acq_param_ci
   - pip install -e .
   - source /home/travis/virtualenv/python3.7.1/bin/activate
   - cd ..
