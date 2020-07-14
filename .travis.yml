@@ -16,6 +16,11 @@ branches:
   only:
   - af/acq_param_ci
 
+before_install:
+  - sudo rm -rf ~/.nvm
+  - curl -sL https://deb.nodesource.com/setup_current.x | sudo -E bash -
+  - sudo apt-get install -y nodejs
+
 install:
   - git clone https://github.com/spine-generic/spine-generic.git code/spine-generic
   - cd code/spine-generic
@@ -24,10 +29,6 @@ install:
   - source ~/virtualenv/python3.7/bin/activate
   - pwd
   - cd ../..
-  - sudo rm -rf ~/.nvm
-  - curl -sL https://deb.nodesource.com/setup_current.x
-  - sudo -E bash
-  - sudo apt-get install -y nodejs
   - npm --version
   - node -v
   - npm install -g bids-validator
