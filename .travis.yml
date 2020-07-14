@@ -28,6 +28,7 @@ install:
   - sudo apt-get install -y nodejs
   - sudo apt install npm
   - npm --version
+  - node -v
   - npm install -g bids-validator
 
 script: 
