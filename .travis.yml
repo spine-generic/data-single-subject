@@ -13,11 +13,6 @@ branches:
   only:
   - af/acq_param_ci
 
-before_install:
-  - sudo rm -rf ~/.nvm - curl -sL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
-  - sudo apt-get install -y nodejs
-  - npm --version
-
   install:
   - git clone https://github.com/spine-generic/spine-generic.git code/spine-generic
   - cd code/spine-generic
@@ -26,10 +21,12 @@ before_install:
   - source ~/virtualenv/python3.7/bin/activate
   - pwd
   - cd ../..
+  - sudo rm -rf ~/.nvm - curl -sL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+  - sudo apt-get install -y nodejs
+  - npm --version
   - npm install -g bids-validator
 
 script: 
   - sg_params_checker -path-in ./
   - bids-validator -help
   - bids-validator /home/travis/build/spine-generic/data-single-subject/
-  
