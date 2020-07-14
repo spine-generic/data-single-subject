@@ -25,7 +25,7 @@ install:
   - pwd
   - cd ../..
   - npm install -g bids-validator
-  - npm-version
+  - npm --version
 
 script: 
   - sg_params_checker -path-in ./
