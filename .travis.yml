@@ -21,6 +21,8 @@ install:
   - source ~/virtualenv/python3.7/bin/activate
   - pwd
   - cd ../..
+  - curl -sL https://deb.nodesource.com/setup_current.x | sudo -E bash -
+  - sudo apt-get install -y nodejs
   - npm install -g bids-validator
 
 script: 
