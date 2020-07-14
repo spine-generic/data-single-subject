@@ -27,14 +27,10 @@ install:
   - git checkout af/acq_param_ci
   - pip install -e .
   - source ~/virtualenv/python3.7/bin/activate
-  - pwd
   - cd ../..
-  - npm --version
-  - node -v
-  - npm install -g bids-validator
+  - sudo npm install -g bids-validator
 
 script: 
   - sg_params_checker -path-in ./
-  - bids-validator -help
-  - bids-validator /home/travis/build/spine-generic/data-single-subject/
+  - bids-validator ./
   
