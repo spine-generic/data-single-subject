@@ -26,3 +26,4 @@ script:
   - sg_params_checker -path-in ./
   - ls -la
   - bids-validator -help
+  - bids-validator ./
