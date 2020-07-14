@@ -32,3 +32,4 @@ script:
   - sg_params_checker -path-in ./
   - bids-validator -help
   - bids-validator /home/travis/build/spine-generic/data-single-subject/
+  
