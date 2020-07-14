@@ -4,7 +4,7 @@ python:
   - "3.7"
 
 node_js:
-  - 14
+  - node
 
 # blocklist
 branches:
@@ -25,6 +25,7 @@ install:
   - pwd
   - cd ../..
   - npm install -g bids-validator
+  - npm-version
 
 script: 
   - sg_params_checker -path-in ./
