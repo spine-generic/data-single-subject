@@ -24,4 +24,4 @@ install:
 
 script: 
   - sg_params_checker -path-in ./
-  - bids-validator ./
+  - bids-validator -help
