@@ -14,12 +14,12 @@ branches:
   - af/acq_param_ci
   
 install:
-  - git clone https://github.com/spine-generic/spine-generic.git
-  - cd spine-generic/
+  - git clone https://github.com/spine-generic/spine-generic.git code/spine-generic
+  - cd code/spine-generic
   - git checkout af/acq_param_ci
   - pip install -e .
   - source ~/virtualenv/python3.7/bin/activate
-  - cd ..
+  - cd ~
   - npm install -g bids-validator
 
 script: 
