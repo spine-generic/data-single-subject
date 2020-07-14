@@ -20,6 +20,8 @@ install:
   - pip install -e .
   - source ~/virtualenv/python3.7/bin/activate
   - cd ..
+  - npm install -g bids-validator
+  - bids-validator ./
 
 script: 
   - sg_params_checker -path-in ./
