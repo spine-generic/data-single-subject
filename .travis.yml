@@ -33,7 +33,7 @@ install:
   - cd ../..
 
 script: 
-  - echo -e "\e[1m \e[4m \e[34m Running BIDS-validator \n"
+  - echo -e "\e[1m \e[4m \e[34mRunning BIDS-validator \n"
   - bids-validator ./
-  - echo -e "\e[1m \e[4m \e[34m Checking acquisition parameters \n"
+  - echo -e "\e[1m \e[4m \e[34mChecking acquisition parameters \n"
   - sg_params_checker -path-in ./  
