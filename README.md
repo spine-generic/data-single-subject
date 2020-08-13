@@ -13,25 +13,27 @@ The contributor has the necessary ethics & permissions to share the data publicl
 The dataset does not include any identifiable personal health information, including names,
 zip codes, dates of birth, facial features on structural scans.
 
+The processing pipeline to analyze this dataset is available in the [spine-generic repository](https://github.com/sct-pipeline/spine-generic).
+
+The entire dataset is about **1GB**.
+
 ## Download
 
-To download the latest version of this dataset, you have two options:
-
-### Download zip package (recommended)
-
-If you are only planning on using the dataset for processing, you can download the latest version as a zip package:
+We are using a tool to manage large datasets alled `git-annex`. To download, dataset, you need to have `git` installed, and also [install `git-annex`](https://git-annex.branchable.com/install/). Then run:
 
 ~~~
-curl -o spinegeneric.zip -L https://github.com/spine-generic/data-single-subject/archive/master.zip
-unzip spinegeneric.zip
+git clone https://github.com/spine-generic/data-single-subject &&
+cd data-single-subject &&
+git annex init &&
+git annex get
 ~~~
 
-### Clone the repository (slower)
+You may **substitute** `git annex get` with more specific commands if you are only interested in certain subjects. For example:
 
-If you are planning on contributing to this repository (e.g. uploading manual segmentations/labels), you need to clone this repository:
-~~~
-git clone https://github.com/spine-generic/data-single-subject.git
-~~~
+```
+get annex get sub-douglas sub-juntendoPrisma/anat/
+```
+
 
 ## Analysis
 
@@ -39,4 +41,4 @@ The instructions to process this dataset are available in the [spine-generic doc
 
 ## Contributing
 
-If you wish to contribute to this dataset by adding new images and/or manual ground truths (e.g., spinal cord segmentations, disc labels, etc.), please fork this repository and submit a pull request. Thank you for your contribution 🎉 
+If you wish to contribute to this dataset please see [CONTRIBUTING.md](./CONTRIBUTING.md). Thank you for your contribution 🎉 
