@@ -9,7 +9,7 @@ The process is a little bit unusual because of the existence of `git-annex` and 
 2. Add your fork as a remote:
 ```
 # in your local copy, assuming you already followed the download instructions in README.md
-git add yourusername git@github.com:yourusername/data-multi-subject.git
+git add yourusername git@github.com:yourusername/data-single-subject.git
 git annex sync yourusername
 ```
 3. Start a branch:
@@ -30,7 +30,7 @@ export AWS_ACCESS_KEY_ID="..." AWS_SECRET_ACCESS_KEY="..."
 git annex sync --content amazon
 git annex sync yourusername
 ```
-8. Go to https://github.com/yourusername/data-multi-subject and click the Pull Request button.
+8. Go to https://github.com/yourusername/data-single-subject and click the Pull Request button.
 
 ## If you are an external contributor.
 
@@ -88,7 +88,7 @@ aws s3api delete-bucket --bucket $BUCKET --region ca-central-1
 But this is a complete wipe. If you just need to reset it so you can rerun `git annex initremote`, it is enough to do:
 
 ```
-aws s3 rm s3://data-multi-subject---spine-generic---neuropoly/annex-uuid
+aws s3 rm s3://data-single-subject---spine-generic---neuropoly/annex-uuid
 ```
 
 Hopefully, erasing all the data won't be something we need to do that often, but there it is if we need to.
