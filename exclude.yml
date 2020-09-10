@@ -1,0 +1,12 @@
+csa_gm:
+- sub-juntendoAchieva  # repositionning (https://github.com/spine-generic/data-single-subject/issues/8)
+
+dti_fa:
+- perform  # strong aliasing artifact (https://github.com/spine-generic/data-single-subject/issues/10)
+- glen  # wrong raw DWI data (https://github.com/spine-generic/data-single-subject/issues/14)
+
+dti_md:
+- glen  # wrong raw DWI data (https://github.com/spine-generic/data-single-subject/issues/14)
+
+dti_rd:
+- glen  # wrong raw DWI data (https://github.com/spine-generic/data-single-subject/issues/14)
