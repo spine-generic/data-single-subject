@@ -1,12 +1,15 @@
+csa_t1:
+- oxfordFmrib  # Motion artifact (https://github.com/spine-generic/data-single-subject/issues/2)
+- tokyoSigna2  # Motion artifact (https://github.com/spine-generic/data-single-subject/issues/2)
+
 csa_gm:
 - sub-juntendoAchieva  # repositionning (https://github.com/spine-generic/data-single-subject/issues/8)
 
 dti_fa:
+- juntendoAchieva  # no cardiac gating
 - perform  # strong aliasing artifact (https://github.com/spine-generic/data-single-subject/issues/10)
-- glen  # wrong raw DWI data (https://github.com/spine-generic/data-single-subject/issues/14)
+- tokyo750w  # no cardiac gating
 
-dti_md:
-- glen  # wrong raw DWI data (https://github.com/spine-generic/data-single-subject/issues/14)
-
-dti_rd:
-- glen  # wrong raw DWI data (https://github.com/spine-generic/data-single-subject/issues/14)
+mtr:
+- juntendo750w  # TR of 62ms instead of 35ms
+- perform  # TR of 62ms instead of 35ms
