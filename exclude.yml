@@ -5,11 +5,21 @@ csa_t1:
 csa_gm:
 - sub-juntendoAchieva  # repositionning (https://github.com/spine-generic/data-single-subject/issues/8)
 
+mtr:
+- juntendo750w  # TR of 62ms instead of 35ms
+- perform  # TR of 62ms instead of 35ms
+
 dti_fa:
 - juntendoAchieva  # no cardiac gating
 - perform  # strong aliasing artifact (https://github.com/spine-generic/data-single-subject/issues/10)
 - tokyo750w  # no cardiac gating
 
-mtr:
-- juntendo750w  # TR of 62ms instead of 35ms
-- perform  # TR of 62ms instead of 35ms
+dti_md:
+- juntendoAchieva  # no cardiac gating
+- perform  # strong aliasing artifact (https://github.com/spine-generic/data-single-subject/issues/10)
+- tokyo750w  # no cardiac gating
+
+dti_rd:
+- juntendoAchieva  # no cardiac gating
+- perform  # strong aliasing artifact (https://github.com/spine-generic/data-single-subject/issues/10)
+- tokyo750w  # no cardiac gating
