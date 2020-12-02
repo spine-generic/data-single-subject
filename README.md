@@ -1,6 +1,5 @@
 # Spine Generic Public Database (Single Subject)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4299148.svg)](https://doi.org/10.5281/zenodo.4299148)
-[![Build Status](https://travis-ci.com/spine-generic/data-single-subject.svg?branch=master)](https://travis-ci.com/spine-generic/data-single-subject)
 
 ## About this dataset
 
