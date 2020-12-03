@@ -1,6 +1,7 @@
 # Spine Generic Public Database (Single Subject)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4299148.svg)](https://doi.org/10.5281/zenodo.4299148)
-![BIDS Validator](https://github.com/spine-generic/data-single-subject/workflows/BIDS%20Validator/badge.svg)
+[![BIDS Validator](https://github.com/spine-generic/data-single-subject/workflows/BIDS%20Validator/badge.svg)](https://github.com/spine-generic/data-single-subject/actions?query=workflow%3A%22BIDS+Validator%22)
+
 ## About this dataset
 
 This dataset was acquired using the [spine-generic protocol](http://spinalcordmri.org/protocols)
