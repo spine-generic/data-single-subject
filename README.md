@@ -30,7 +30,7 @@ git annex get
 You may **substitute** `git annex get` with more specific commands if you are only interested in certain subjects. For example:
 
 ```
-get annex get sub-douglas sub-juntendoPrisma/anat/
+git annex get sub-douglas sub-juntendoPrisma/anat/
 ```
 
 
