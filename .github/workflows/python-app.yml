@@ -50,8 +50,12 @@ jobs:
         pip install spinegeneric@git+https://github.com/spine-generic/spine-generic.git@v2.9
 
     - name: Run bids-validator
+      # If the explicit whitelist of allowed environment variables gets too annoying to update,
+      # we can loosen it to just a blanket `--allow-env`. This will let bids-validator and all of its
+      # dependencies access any credentials that github CI exposes in environment variables, but at
+      # least we're not giving it any network access, so exfiltrating them would require more effort.
       run: |
-        deno run --no-prompt --allow-env=BIDS_SCHEMA,FORCE_COLOR --allow-read=. jsr:@bids/validator .
+        deno run --no-prompt --allow-env=BIDS_SCHEMA,FORCE_COLOR,IGNORE_TEST_WIN32 --allow-read=. jsr:@bids/validator .
 
     - name: Run acquisition parameter validator
       # we ignore the exit code because we expect warnings, but we still want
