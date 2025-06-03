@@ -1,4 +1,4 @@
-name: BIDS Validator
+name: Dataset Validator
 
 on:
   push:
@@ -14,8 +14,12 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
       with:
-        # download from the PR's repo (which may be a fork), because we also
-        # need the git-annex branch from that repo
+        # make sure to download directly from the PR's repo, whether that is this repo or a fork
+        # By default github generates a merge commit for each PR in this repo, but only for the one branch under test
+        # but `git-annex` needs access to *two* branches: the current branch and `git-annex`
+        # this might be subtly buggy since it is testing the remote version, not the merged version
+        #
+        # *if* this is not a pull request, this will fall back to its default behaviour.
         repository: ${{github.event.pull_request.head.repo.full_name}}
         ref: ${{github.event.pull_request.head.ref}}
 
@@ -55,16 +59,12 @@ jobs:
       # dependencies access any credentials that github CI exposes in environment variables, but at
       # least we're not giving it any network access, so exfiltrating them would require more effort.
       run: |
-        deno run --no-prompt --allow-env=BIDS_SCHEMA,FORCE_COLOR,IGNORE_TEST_WIN32 --allow-read=. jsr:@bids/validator .
+        deno run --no-prompt --allow-env=BIDS_SCHEMA,FORCE_COLOR,IGNORE_TEST_WIN32 --allow-read=. jsr:@bids/validator . || echo '::warning title=bids-validator::Errors found by bids-validator'
 
     - name: Run acquisition parameter validator
-      # we ignore the exit code because we expect warnings, but we still want
-      # to see them
       run: |
-        sg_params_checker -path-in . || true
+        sg_params_checker -path-in . || echo '::warning title=bids-validator::Errors found by sg_params_checker'
 
     - name: Run data consistency validator
-      # we ignore the exit code because we expect warnings, but we still want
-      # to see them
       run: |
-        sg_check_data_consistency -path-in . || true
+        sg_check_data_consistency -path-in . || echo '::warning title=bids-validator::Errors found by sg_check_data_consistency'
