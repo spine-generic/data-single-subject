@@ -33,6 +33,12 @@ You may **substitute** `git annex get` with more specific commands if you are on
 git annex get sub-douglas sub-juntendoPrisma/anat/
 ```
 
+Note that we changed our hosting provider for this data in 2025 (see [#36](https://github.com/spine-generic/data-single-subject/issues/36)). If you have older clones of this repository, you may need to manually enable the new host:
+
+```
+git annex enableremote computecanada-public
+```
+
 ## Working from a forked repository
 
 > ⚠️ For advanced users only. Normally the instructions under [Download](#Download) should be enough.
